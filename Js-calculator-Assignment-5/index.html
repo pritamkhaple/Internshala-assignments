@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <title>Js Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        .inputs{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          
+        }
+
+
+        .output{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 30%;
+          margin-left: 35%;
+          font-weight: bold;
+        }
+
+
+        h1{
+            text-align: center;
+            display: inline-block;
+            color: red;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+        }
+
+        
+        .heading{
+          display: flex;
+          justify-content: center;
+        }
+
+        input,select{
+          height: 2.5rem;
+        }
+
+        .input-1{
+          display: flex;
+          flex-direction: column;
+          width: 30%;
+          font-weight: bold;
+        }
+        
+       
+    </style>
+</head>
+
+<body>
+    
+    
+    <div class="container"> 
+      <div class="heading">
+      <h1>Javascript Calculator</h1> 
+   </div> 
+  
+  
+
+  <br>
+     <div class="inputs">
+      <div class="input-1 form-group ">
+      <label for="first-number colr">Number-1</label>
+      <input type="number" id="first-number" class="form-control">
+     </div>
+
+
+    <div class="input-1 form-group">
+      <label for="operator">Operator</label>
+      <select name="operator" id="operator" class="form-select">
+       
+        <option value="add">+</option>
+        <option value="sub">-</option>
+        <option value="mult">*</option>
+        <option value="divide">/</option>
+
+      </select>
+
+    </div>
+
+      <div class="input-1 form-group">
+      <label for="second-number colr">Number-2</label>
+      <input type="number" id="second-number" class="form-control">
+    </div>
+
+    </div> 
+    
+    
+
+
+      <br>
+      <div class="d-grid">
+      <button type="button" class="btn btn-primary  btn-block colr">Submit</button>
+    </div>
+    <br>
+
+    <div class="output">
+      <label for="answer">Answer:</label>
+      <input type="number" id="answer" class="form-control" readonly>
+    </div>
+
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="./index.js"></script>
+</body>
+
+
+</html>
